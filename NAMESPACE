@@ -1,0 +1,9 @@
+import("data.table")
+import('wyz.code.offensiveProgramming')
+importFrom('methods', 'is')
+export(
+  generateUnitTestFile,
+  generateAllUnitTestsFromObject,
+  gautfo,
+  testthatFactory
+)

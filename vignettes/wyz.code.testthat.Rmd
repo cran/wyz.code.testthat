@@ -1,0 +1,33 @@
+---
+title: "wyz.code.testthat"
+author: "Fabien GELINEAU"
+date: "July 2019"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{wyz.code.testthat}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+<style>
+body {
+text-align: justify}
+</style>
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r, eval = TRUE, echo = FALSE}
+pkn <- 'wyz.code.testthat'
+```
+
+
+Package **`r pkn`**  aims to generate **testthat** test cases from recorded unit tests.
+
+Read [Offensive programming book](https://neonira.github.io/offensiveProgrammingBook/) to get introduction and advanced knowledge on the topic. 
+
+
