@@ -50,7 +50,7 @@ much more straightforward way to get results.
 \examples{
 ##---- typical example ----
 fn <- file.path(tempdir(), 'myFile')
-fn <- generateUnitTestFile("~/tmp/myFile", c("# a comment", "x <- 2"))
+fn <- generateUnitTestFile(fn, c("# a comment", "x <- 2"))
 print(fn)
 }
 \keyword{ utilities }
