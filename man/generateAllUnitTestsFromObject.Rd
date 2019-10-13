@@ -55,7 +55,7 @@ library(data.table)
 library(wyz.code.offensiveProgramming)
 library(wyz.code.testthat)
 
-source_file <- 'code-samples/full-instrumentation/AdditionTCFIG1.R'
+source_file <- 'code-samples/both-defs/good/full/AdditionTCFIG1.R'
 source_package <- 'wyz.code.offensiveProgramming'
 source(system.file(source_file, package = source_package))
 

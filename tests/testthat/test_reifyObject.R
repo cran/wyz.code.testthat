@@ -1,76 +1,31 @@
 context("reifyObject")
 
-Bu_S3 <- function(x_l = list(l = letters, d = 0:9)) {
-  value <- x_l
-  attr(value, 'class') <- 'Bu_S3'
-  value
-}
+source(file.path(system.file(package = "wyz.code.offensiveProgramming"),
+                 'code-samples', 'classes', 'sample-classes.R'))
 
-Person_S4 <- setClass("Person_S4",
-                      slots = c(
-                        name = "character",
-                        age = "numeric"
-                      )
+
+obj <- list( MyEnv(),
+             Bu_S3(),
+             new('Person_RC', name = 'neonira'),
+             new('Person_S4', name = 'neonira'),
+             Wyx(1:7),
+             Accumulator_R6$new()
 )
 
-setMethod("show", "Person_S4", function(object) {
-  cat(is(object)[[1]], "\n",
-      "  Name: ", object@name, "\n",
-      "  Age:  ", object@age, "\n",
-      sep = ""
-  )
-})
+#print(obj)
 
-setGeneric("name", function(o_) standardGeneric("name"))
-setMethod("name", "Person_S4", function(o_) o_@name)
-
-Person_RC <- setRefClass("Person_RC",
-                         fields = list(name = "character",
-                                       age = "integer"),
-                         methods = list(
-                           setName = function(aname) {
-                             name <<- aname
-                           },
-                           setAge = function(anAge) {
-                             age <<- anAge
-                           }
-                         )
-)
-
-Accumulator_R6 <- R6::R6Class("Accumulator_R6", list(
-  sum = 0,
-
-  add = function(x = 1) {
-    self$sum <- self$sum + x
-    self$sum
-  })
-)
-
-MyEnv <- function(x_i, y_i = 1L) {
-  self <- environment()
-  class(self) <- append('MyEnv', class(self))
-
-  self
-}
-
-# Why does that fail? Testthat context is not seing previously defined
-# functions
-obj <- list(
-  guardExecution(reifyObject(MyEnv(1:3), '', '')),
-  guardExecution(reifyObject(Bu_S3(), '', '')),
-  guardExecution(reifyObject(new('Person_RC', name = 'neonira'), '', '')),
-  guardExecution(reifyObject(new('Person_S4', name = 'neonira'), '', '')),
-  guardExecution(reifyObject(Accumulator_R6$new(), '', ''))
-)
+robj <- lapply(obj, function(e) tryCatch(wyz.code.testthat:::reifyObject(e, '', ''),
+                                         error = function(e) e))
 
 #print(obj)
 
 test_that("reifyObject", {
 
   expect_true(is.na(reifyObject(new.env(), '', '')))
-  expect_error(reifyObject(Bu_S3(), '', ''))
-  expect_error(reifyObject(new('Person_RC', name = 'neonira'), '', ''))
-  expect_error(reifyObject(new('Person_S4', name = 'neonira'), '', ''))
-  expect_error(reifyObject(Accumulator_R6$new(), '', ''))
-  expect_error(reifyObject(MyEnv(1:3), '', ''))
+  sapply(seq_len(length(robj)), function(k) {
+    ock <- wyz.code.offensiveProgramming::getObjectClassNames(obj[[k]])$classname
+    b <- grepl(ock, as.character(robj[[k]]$to_reify))[1]
+    #cat('\n', k, ock, 'robj', as.character(robj[[k]]$to_reify), 'result', b, '\n')
+    expect_true(b)
+  })
 })

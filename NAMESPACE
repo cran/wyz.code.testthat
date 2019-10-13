@@ -1,6 +1,10 @@
 import("data.table")
+import("R6")
 import('wyz.code.offensiveProgramming')
+importFrom("lubridate", "is.Date", "is.POSIXct", "is.POSIXlt")
+importFrom("tidyr", "separate")
 importFrom('methods', 'is')
+
 export(
   generateUnitTestFile,
   generateAllUnitTestsFromObject,

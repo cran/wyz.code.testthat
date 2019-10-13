@@ -9,10 +9,10 @@ generateTests <- function(sourceFile_s_1, sourcePackage_s_1, object_o_1) {
 source_package <- 'wyz.code.offensiveProgramming'
 
 source_files <- c(
-  'code-samples/full-instrumentation/AdditionTCFIG1.R',
-  'code-samples/no-instrumentation/Addition.R',
-  'code-samples/fun-defs/good/partial/AdditionFIPartial.R',
-  'code-samples/tc-defs/good/partial/AdditionTCPartial.R'
+  'code-samples/both-defs/good/full/AdditionTCFIG1.R',
+  'code-samples/no-defs/Addition.R',
+  'code-samples/frt-defs/good/partial/AdditionFIPartial.R',
+  'code-samples/tcd-defs/good/partial/AdditionTCPartial.R'
 )
 
 sapply(source_files, function(e) {
