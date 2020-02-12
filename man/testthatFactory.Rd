@@ -36,8 +36,13 @@ much more straightforward way to get results.
 }
 \examples{
 ##---- typical example ----
-rv <- testthatFactory()(c(call('isTRUE', TRUE), call('isTRUE', !FALSE)), 'correct')
+rv <- testthatFactory()(c(call('isTRUE', TRUE), call('isFALSE', FALSE)), 'correct')
 print(rv)
+# [[1]]
+# expect_true(isTRUE(TRUE))
+#
+# [[2]]
+# expect_true(isFALSE(FALSE))
 }
 \keyword{ utilities }
 

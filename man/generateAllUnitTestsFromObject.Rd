@@ -62,5 +62,17 @@ source(system.file(source_file, package = source_package))
 object <- AdditionTCFIG1()
 g <- gautfo(object, source_file, source_package, tempdir())
 print(g)
+# $class
+# [1] "AdditionTCFIG1"
+#
+# $filenames
+#                                                 filename overwritten
+# 1:       /tmp/RtmpKLCrXA/test_AdditionTCFIG1-addDouble.R        TRUE
+# 2:      /tmp/RtmpKLCrXA/test_AdditionTCFIG1-addInteger.R        TRUE
+# 3:    /tmp/RtmpKLCrXA/test_AdditionTCFIG1-divideByZero.R        TRUE
+# 4: /tmp/RtmpKLCrXA/test_AdditionTCFIG1-generateWarning.R        TRUE
+# 5:   /tmp/RtmpKLCrXA/test_AdditionTCFIG1-generateError.R        TRUE
+# 6:  /tmp/RtmpKLCrXA/test_AdditionTCFIG1-addMultiDouble.R        TRUE
+# 7: /tmp/RtmpKLCrXA/test_AdditionTCFIG1-addMultiInteger.R        TRUE
 }
 \keyword{ utilities }

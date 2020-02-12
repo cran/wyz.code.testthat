@@ -1,0 +1,53 @@
+---
+title: "wyz.code.testthat releases"
+author: "Fabien GELINEAU"
+date: "Last update 2020 January"
+output: 
+  rmarkdown::html_vignette:
+    number_sections: true
+    toc: true
+    css: style.css
+vignette: >
+  %\VignetteIndexEntry{wyz.code.testthat releases}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+  %\usepackage[utf8]{inputenc}
+  %\declareUnicodeCharacter{25B6}{\blacktriangleright}
+---
+
+<img src='images/testthat-hex.png' alt='offensive programming - R documentation' style='width:30%'/>
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+source('vignette-common.R')
+```
+
+# 1.1.9 - January 2020
+
+Main improvements are 
+
+1. `r citefun("packageFunctionsInformation")` renamed to `r citefun("opTestthatInformation")`
+1. `r citefun("opTestthatInformation")` verified and upgraded
+1. completed manual pages - 4 manual pages 
+1. enhanced manual pages documentation: review of all contents and corrections
+1. upgraded vignette - 1 vignette
+1. completed test panel - 5 test files - 20 tests
+1. Worked on test coverage to reach level higher than 99%
+1. Timing for tests 1s, checks 25s
+
+# 1.1.6
+
+Main improvements are 
+
+1. corrected erroneous write out of tempdir folder
+1. completed unit tests
+1. enforced higher code coverage (up to 99.40%)
+1. clean up package dependencies. 
+
+
+This release replaces fully olders ones, that are now considered obsoletes. Keep the pace, and 
+upgrade your packages if you do not use this version or a higher one!
+

@@ -50,8 +50,9 @@ much more straightforward way to get results.
 \examples{
 ##---- typical example ----
 fn <- file.path(tempdir(), 'myFile')
-fn <- generateUnitTestFile(fn, c("# a comment", "x <- 2"))
-print(fn)
-}
+fr <- generateUnitTestFile(fn, c("# a comment", "x <- 2"))
+cat(paste(readLines(fr$filename), collapse  = '\n'))
+# a comment
+# x <- 2}
 \keyword{ utilities }
 
