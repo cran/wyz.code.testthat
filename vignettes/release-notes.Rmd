@@ -1,21 +1,19 @@
 ---
-title: "wyz.code.testthat releases"
-author: "Fabien GELINEAU"
-date: "Last update 2020 January"
+title: Release notes of package wyz.code.testthat
+author: Fabien GELINEAU
+date: 2020-04-08
 output: 
   rmarkdown::html_vignette:
-    number_sections: true
-    toc: true
+    number_sections: false
+    toc: false
     css: style.css
 vignette: >
-  %\VignetteIndexEntry{wyz.code.testthat releases}
+  %\VignetteIndexEntry{ Release notes of package wyz.code.testthat }
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
   %\usepackage[utf8]{inputenc}
   %\declareUnicodeCharacter{25B6}{\blacktriangleright}
 ---
-
-<img src='images/testthat-hex.png' alt='offensive programming - R documentation' style='width:30%'/>
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
@@ -24,6 +22,15 @@ knitr::opts_chunk$set(
 )
 source('vignette-common.R')
 ```
+
+<img src='images/testthat-hex.png' alt='offensive programming - R documentation' style='width:30%'/>
+
+# 1.1.17 - April, 22nd 2020
+
+1. updated all documentations
+1. Upgraded and updated vignette
+1. test, Duration: `r citefigure('0.6s')`, OK: `r citefigure('21')`
+1. test, Duration: `r citefigure('24.1s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
 
 # 1.1.9 - January 2020
 

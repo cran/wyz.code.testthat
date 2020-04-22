@@ -15,12 +15,14 @@ Returns a function that manages dispatch depending on targeted offensive program
 object test case evaluation mode value.
 }
 \references{
-See \code{\link[wyz.code.offensiveProgramming]{EvaluationMode}} for more information.
+See \bold{\emph{\code{\link[wyz.code.offensiveProgramming]{EvaluationMode}}}}
+for more information.
 
-Refer to \code{\link[testthat]{test_file}} from package \code{testthat}.
+Refer to \bold{\emph{\code{\link[testthat]{test_file}}}} from package
+\bold{\code{testthat}}.
 
-Refer to \code{\link[wyz.code.offensiveProgramming]{runTestCase}} from package
-\code{wyz.code.offensiveProgramming}.
+Refer to \bold{\emph{\code{\link[wyz.code.offensiveProgramming]{runTestCase}}}}
+from package \bold{\code{wyz.code.offensiveProgramming}}.
 }
 \author{
   \packageAuthor{wyz.code.testthat}
@@ -28,7 +30,7 @@ Refer to \code{\link[wyz.code.offensiveProgramming]{runTestCase}} from package
   Maintainer: \packageMaintainer{wyz.code.testthat}
 }
 \note{
-This function is provided for convenience. It may easy your own way to generate
+This function is provided for convenience. It may ease your own way to generate
 \code{testthat} code from an instrumented offensive programming object.
 
 To put this package in action, simply use \code{\link{gautfo}} that offers a
