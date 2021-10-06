@@ -1,7 +1,7 @@
 Package: wyz.code.testthat
 Type: Package
 Title: Wizardry Code Offensive Programming Test Generation
-Version: 1.1.17
+Version: 1.1.20
 Author: Fabien Gelineau <neonira@gmail.com>
 Maintainer: Fabien Gelineau <neonira@gmail.com>
 Description: Allows to generate automatically 'testthat' code files from offensive 
@@ -13,16 +13,15 @@ Description: Allows to generate automatically 'testthat' code files from offensi
     complete provided test cases according to your needs to push testing further, 
     but this need is nearly void when using 'wyz.code.offensiveProgramming'. 
 Encoding: UTF-8
-LazyData: true
 License: GPL-3
-Depends: R (>= 3.6)
-Imports: methods, data.table (>= 1.11.8), tidyr, lubridate (>= 1.7.4),
-        wyz.code.offensiveProgramming (>= 1.1.17), R6 (>= 2.4.0)
+Depends: R (>= 4.0)
+Imports: methods, data.table (>= 1.11.8), tidyr,
+        wyz.code.offensiveProgramming (>= 1.1.22), R6 (>= 2.4.0)
 Suggests: testthat, knitr, rmarkdown
 RoxygenNote: 6.1.1
 VignetteBuilder: knitr
-URL: https://neonira.github.io/offensiveProgrammingBook_v1.2.2
+URL: https://neonira.github.io/offensiveProgrammingBook_v1.2.2/
 NeedsCompilation: no
-Packaged: 2020-04-22 09:51:54 UTC; fabien
+Packaged: 2021-10-06 06:25:44 UTC; fabien
 Repository: CRAN
-Date/Publication: 2020-04-22 10:30:02 UTC
+Date/Publication: 2021-10-06 06:50:02 UTC

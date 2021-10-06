@@ -3,5 +3,5 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-source('vignette-common.R')
+source('common-style.R')
 

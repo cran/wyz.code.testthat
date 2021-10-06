@@ -1,5 +1,5 @@
-e4e4d13a970b78ef3df00eb9f6d18d55 *DESCRIPTION
-5f9f8e598e93b191e75f7d1981b0419b *NAMESPACE
+1350146778749774f8c6bc3633b716df *DESCRIPTION
+44b12b7682dc026a30e3c0fe986b2c07 *NAMESPACE
 da042a6463b7ff77bca3d70742f095a8 *R/generateAllUnitTestsFromObject.R
 3815bafcf5de1232d0bd57ff2ab155b3 *R/generateTestthatEnvelope.R
 8212b15d178db78df1205ca2531ac4bd *R/generateUnitTestFile.R
@@ -8,11 +8,12 @@ fcafe5ff12521bbff54b0afcde6e8bfc *R/outOfPackage.R
 2540725ecd1f83abbd70d20c9f374978 *R/reifyObject.R
 9a073cf84996a6d7e4f5dd35496bd989 *R/testthatFactory.R
 9a3cbb4ee4c3c32a2006ef8513df9afa *R/transformValuesInCode.R
-10bb6e92eaae67ef37a5a5de03f212ee *build/partial.rdb
-42c291c68ad7095b857b44bd8d2c9384 *build/vignette.rds
-de5e2e05b5927ef0ffb5deb9189829db *inst/doc/release-notes.R
-8992333801ae90bcd342b913212671e5 *inst/doc/release-notes.Rmd
-811f326b502003c75157d2f01cec1433 *inst/doc/release-notes.html
+e32ba4459f896729f4081ee421e31c5e *build/partial.rdb
+1fce1d55bb8abdeb4874d4870d6463d8 *build/vignette.rds
+272c98716f421cc034a0ffefaf189e6f *inst/doc/release-notes.R
+36a43dbffa84774fedae3e647d864b4b *inst/doc/release-notes.Rmd
+679ec542e9fcc67f9472b81d8503cd51 *inst/doc/release-notes.html
+f1733392a3db617f276e6c2aebecd991 *inst/extdata/project-release.rds
 c9e12401f3f4db2e641af07341f42103 *man/generateAllUnitTestsFromObject.Rd
 030278c1de5b623defa64f3d628e1124 *man/generateUnitTestFile.Rd
 442ddf8701543596ca1600d6d7bf5421 *man/opTestthatInformation.Rd
@@ -31,7 +32,7 @@ a96dc432c7dd2fc96698c73aba3f11f0 *tests/testthat/test_generateUnitTestFile.R
 02b59122a15832ffb5a021635b720bcd *tests/testthat/tests/testthat_xxx/test_AdditionTCFIG1-divideByZero.R
 3450e34c7f33ecda14e04a1a737666d8 *tests/testthat/tests/testthat_xxx/test_AdditionTCFIG1-generateError.R
 b894cda4c360fd212ee299fe4abebfce *tests/testthat/tests/testthat_xxx/test_AdditionTCFIG1-generateWarning.R
+c4c87e9461f00d88cc27182c80fb4e87 *vignettes/common-style.R
 e1d6c06f291c1ad5f39410f660323058 *vignettes/images/testthat-hex.png
-8992333801ae90bcd342b913212671e5 *vignettes/release-notes.Rmd
-5e9c23c51cda1819e2b789b2d02abd9a *vignettes/style.css
-4b40161c1f799637766b1d7aab3433d9 *vignettes/vignette-common.R
+36a43dbffa84774fedae3e647d864b4b *vignettes/release-notes.Rmd
+b6bf80c77b5d818be62f6f63c3501cf6 *vignettes/style.css

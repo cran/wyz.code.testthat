@@ -20,10 +20,39 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-source('vignette-common.R')
+source('common-style.R')
 ```
 
 <img src='images/testthat-hex.png' alt='offensive programming - R documentation' style='width:30%'/>
+
+# name [awesome-asterion-upsilon] package-version [1.1.20] timestamp [2021-10-05 20:29:24]
+
+1. CRAN information on obsolescence of lubridate - need to remove dependency.
+1. lubridate::date() was not used but speficied in `r citefile("DESCRIPTION")` and `r citefile("NAMESPACE")`
+1. Test, Duration: `r citefigure('0.7s')`, OK: `r citefigure('21')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('21.5s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` content update
+1. `r citeop("git")` alignment
+
+# name [awesome-asterion-tau] package-version [1.1.19] timestamp [2020-11-09 20:13:02]
+
+1. enforced R 4.0
+1. Test, Duration: `r citefigure('0.6s')`, OK: `r citefigure('21')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('23.9s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` content update
+1. `r citeop("git")` alignment
+
+
+# 1.1.18 - awesome-asterion-sigma - 2020-05-04
+
+1. Test, Duration: `r citefigure('0.6s')`, OK: `r citefigure('21')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('23.2s')`, 0 errors ✓ | 1 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` structure update
+1. `r citefolder('vignette')` content update
+
 
 # 1.1.17 - April, 22nd 2020
 
